@@ -62,6 +62,10 @@ public class FragmentViewList extends Fragment implements RecyclerViewAdapter.on
 
     @Override
     public void onClick(Modl modl) {
+
+
+        NavDirections action = FragmentGetDataDirections
+              .actionFragmentGetDataToFragmentViewData(modl);
         Navigation.findNavController(requireView()).navigate(R.id.fragmentViewItem);
 
     }
